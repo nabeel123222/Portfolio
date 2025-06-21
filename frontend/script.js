@@ -65,7 +65,7 @@ const form = document.getElementById("contactForm");
     };
 
     try {
-      const res = await fetch("http://localhost:3000/contact", {
+      const res = await fetch("https://portfolio-backend-mzxm.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
@@ -100,7 +100,7 @@ const form = document.getElementById("contactForm");
     };
 
     try {
-      const res = await fetch("http://localhost:3000/contact", {
+      const res = await fetch("https://portfolio-backend-mzxm.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
