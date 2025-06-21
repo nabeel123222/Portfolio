@@ -7,8 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // Email credentials
-const EMAIL_USER = "nabeelmohamed788@gmail.com";
-const EMAIL_PASS = "zgonhraqrpvdqieu";
+const EMAIL_USER =  process.env.EMAIL_USER;
+const EMAIL_PASS = process.env.EMAIL_PASS;
 
 // Health check
 app.get("/", (req, res) => {
